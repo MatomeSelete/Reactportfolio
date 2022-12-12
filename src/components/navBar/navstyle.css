@@ -1,0 +1,47 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.453);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+}
+
+a, 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navicon {
+    width: 10%;
+    height: 10%;
+    margin-left: 85%;
+    border: 2px solid white;
+}
+
+.bi {
+    color: rgb(170, 168, 168);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    
+
+    .navicon {
+        width: 20%;
+        height: 20%;
+        margin-left: 90%;
+        border: none;
+    }
+    
+    .bi {
+        color: white;
+        width: 50%;
+        height: 50%;
+        
+    }
+
+}
