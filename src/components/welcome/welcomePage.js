@@ -8,6 +8,7 @@ import welcomebg from '../../components/assest/20221127_221005.jpg'
 
 
 function WelcomePage() {
+    
     return (
         <div className='welcomebody'>
              <div className='welcomepage'>
@@ -22,8 +23,8 @@ function WelcomePage() {
                     </p>
 
                     <div className='buttons'>
-                        <Button variant="outline-secondary">Secondary</Button>{' '}
-                        <Button variant="outline-secondary">Secondary</Button>{' '}
+                        <Button onClick={'../resume/resume.js'} variant="outline-secondary">Resume</Button>
+                        <Button onClick={'../about/about.js'} variant="outline-secondary">About</Button>
                     </div>
                 </div>
 
