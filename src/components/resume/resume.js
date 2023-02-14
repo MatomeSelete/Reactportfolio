@@ -1,29 +1,48 @@
-// import React from 'react'
-// import {Container, Header, Grid,} from 'semantic-ui-react'
-// import { Document } from 'react-pdf/dist/entry.webpack';
-// import { Page } from 'react-pdf'
-// import JRResume from '../assets/Jose Romero - Resume.pdf'
+import React from 'react'
+import Button from 'react-bootstrap/Button';
+
+import MatomeSelete from '../assest/MatomeSelete.pdf'
 
 
-// const Resume = () => {
-//   return(
-//     <Container fluid>
-//       <Grid stackable>
-//         <Grid.Row>
-//           <Grid.Column width={4}>
-//           </Grid.Column>
-//           <Grid.Column width={8}>
-//             <Header className='header' as='h1'>Résumé</Header>
-//             <Document file={JRResume}>
-//               <Page pageNumber={1} />
-//             </Document>
-//           </Grid.Column>
-//           <Grid.Column width={4}>
-//           </Grid.Column>            
-//         </Grid.Row>
-//       </Grid>
-//     </Container>
+const Resume = () => {
 
-//   )
-// }
-//  export default Resume
+    // Function will execute on click of button
+    const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch(MatomeSelete).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'MatomeSelete.pdf';
+                alink.click();
+            })
+        })}
+
+        return (
+            <>
+                
+
+                <center>
+                    <h1>Welcome Matome Selete's resume</h1>
+                    <h3>Click on below button to download PDF file</h3>
+                    <br />
+                    <Button variant="secondary" onClick={onButtonClick}>
+                        Download PDF
+                    </Button>
+                </center>
+
+
+
+            </>
+
+        )
+    }
+
+    export default Resume
+
+
+
+

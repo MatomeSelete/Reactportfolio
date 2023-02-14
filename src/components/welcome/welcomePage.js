@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import Typist from 'react-typist';
+
 
 import './welcomeCss.css'
 import welcomebg from '../../components/assest/20221127_221005.jpg'
@@ -13,10 +13,10 @@ function WelcomePage() {
              <div className='welcomepage'>
                 
                 <div className='welcometext'>
-                    <h1 className='welcomeh1'>
-                        <Typist>
+                    <h1 className='welcomeh1'> 
+                        
                             I'm Matome <br /> I love coding <br /> I develop websites
-                        </Typist> </h1>
+                         </h1> 
                     <p className='welcomep'>
                          I love the process  builing developing website from start to finish. the long nights spent on learning new code, new designs and frameworks. the process of bringing a website to live from nothing sets me on fire  
                     </p>
