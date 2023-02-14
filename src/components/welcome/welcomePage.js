@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Typist from 'react-typist';
 
 import './welcomeCss.css'
-import welcomebg from '../images/welcomebg.jpg'
+import welcomebg from '../../components/assest/20221127_221005.jpg'
 // --openssl-legacy-provider 
 
 
