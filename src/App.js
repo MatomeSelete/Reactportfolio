@@ -32,11 +32,12 @@ import './components/navigation/navigation.css'
 <div className='container'>
         <Routes>
          
-            <Route path="/" element={<WelcomePage />} ></Route>
-            <Route path="portfolio.js" element={<PortfolioPage />} ></Route>
-            <Route path="about.js" element={<AboutPage />} ></Route>
-            <Route path="contacts.js" element={<ContactPage />} ></Route>
-            <Route path="navigation.js" element={<Navigation />} ></Route>
+            <Route path="/" element={ <WelcomePage /> } ></Route>
+            <Route path="portfolio.js" element={ <PortfolioPage /> } ></Route>
+            <Route path="about.js" element={ <AboutPage /> } ></Route>
+            <Route path="contacts.js" element={ <ContactPage /> } ></Route>
+            <Route path="navigation.js" element={ <Navigation /> } ></Route>
+            <Route path="resume.js" element={ <ResumePage /> } ></Route>
          
      
         </Routes>

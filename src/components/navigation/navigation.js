@@ -22,7 +22,7 @@ function Navigation() {
           <Link to="/about.js">About</Link>
         </p>
         <p className='navP'>
-          <Link to="/contacts.js">ResumePage</Link>
+          <Link to="/resume.js">ResumePage</Link>
         </p>
       </div>
 

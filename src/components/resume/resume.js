@@ -1,19 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Container, Header, Grid, } from 'semantic-ui-react'
+import { Document, Page } from 'react-pdf'
+import MatomeSelete from '../../../public/MatomeSelete.pdf'
 
-import './resume.css'
+const Resume = () => {
+    return (
+        <Container fluid>
+            <Grid stackable>
+                <Grid.Row>
+                    <Grid.Column width={16}>
+                        <Header className='header' as='h1'>Résumé</Header>
 
-function resumePage () {
+                        <Document file={ MatomeSelete }> //Document has a prop file and we pass our document in this case JRResume
+                            <Page pageNumber={1} />
+                        </Document>
 
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+        </Container>
 
-        return (
-            <>
-            <div className='resumeMain'>
-                <h2 className='resume'>Resume</h2>
-            </div>
-            </>
-        )
-    
+    )
 }
-
-
-export default resumePage;
+export default Resume
