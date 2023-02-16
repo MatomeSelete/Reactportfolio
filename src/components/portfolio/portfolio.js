@@ -36,11 +36,11 @@ function PortfolioPage()  {
                             
                         </Card>
 
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Kontrak</h1>
+                        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Kontrak</h1>
                                     </div>
                                     <div class="modal-body">
                                     Kontrak is an app that serves as a bridge between people seeking services from contractors,
@@ -49,8 +49,8 @@ function PortfolioPage()  {
                                     comparing prices and reading reviews about previous services. Service seekers can also
                                     track the job as it gets done.
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import Button from 'react-bootstrap/Button';
+// import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 
 import './welcomeCss.css'
@@ -7,7 +10,18 @@ import welcomebg from '../../components/assest/20221127_221005.jpg'
 // --openssl-legacy-provider 
 
 
+
 function WelcomePage() {
+
+    let navigate = useNavigate();
+
+    function about() {
+        navigate("/about.js");
+    }
+
+    function resume() {
+        navigate("/resume.js");
+    }
     
     return (
         <div className='welcomebody'>
@@ -23,8 +37,8 @@ function WelcomePage() {
                     </p>
 
                     <div className='buttons'>
-                        <Button onClick={'../resume/resume.js'} variant="outline-secondary">Resume</Button>
-                        <Button onClick={'../about/about.js'} variant="outline-secondary">About</Button>
+                        <Button onClick={()=> resume()}  variant="outline-secondary">Resume</Button>
+                        <Button onClick={()=>  about() } variant="outline-secondary">About</Button>
                     </div>
                 </div>
 
