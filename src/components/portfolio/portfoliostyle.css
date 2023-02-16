@@ -10,6 +10,9 @@
     justify-content: space-evenly;
 } 
 
+.portfoliobody button {
+    margin: 10px;
+}
 
 
 p {
@@ -56,6 +59,15 @@ p {
     
 }
 
+.videolink {
+    /* border: 2px solid white;
+    width: 10%; */
+    color: white;
+    /* background-color: rgb(237, 237, 237); */
+    /* border-radius: 5px; */
+    text-align: center;
+    /* padding: 5px; */
+}
 
 
 

@@ -21,10 +21,19 @@ function PortfolioPage()  {
                         <Card.Title style={{ color: 'white' }}> <span style={{color: 'blue'}} >Kon</span><span style={{color: 'gold'}} >trak</span></Card.Title>
                             <Card.Img style={{ width: '100%', height: "90%" }} variant="top" src={Screenshot} />
                             <Card.Body style={{backgroundColor: 'black'}}>  
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <Button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     More Details
-                                </button>
+                                </Button>
+                                
+                                <Button>
+                                <a className='videolink'  href='https://drive.google.com/file/d/1OIBTWTnl1QEd_jKuJNj08m6IScp-DT--/view'>Project video</a>
+
+                                </Button>
+                               
                             </Card.Body>
+
+
+                            
                         </Card>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
